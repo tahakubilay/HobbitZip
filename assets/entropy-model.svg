@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="390" viewBox="0 0 1200 390" role="img" aria-labelledby="title desc">
+<title id="title">HobbitZip information theory and coding trade-offs</title><desc id="desc">Conceptual illustration of entropy, model overhead and selection between raw and compressed representations. No measured ratios or synthetic benchmark points.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0C1321"/><stop offset="1" stop-color="#172638"/></linearGradient><pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#60718D" stroke-opacity=".10"/></pattern></defs>
+<rect width="1200" height="390" rx="20" fill="url(#bg)"/><rect width="1200" height="390" rx="20" fill="url(#grid)"/>
+<g font-family="Arial,sans-serif">
+<text x="37" y="47" fill="#87E3C4" font-size="17" letter-spacing="2">02 / INFORMATION &amp; MODEL COST</text>
+<rect x="42" y="90" width="538" height="247" rx="16" fill="#112A36" stroke="#537C8C"/><rect x="621" y="90" width="537" height="247" rx="16" fill="#142B38" stroke="#537C8C"/>
+<text x="69" y="130" fill="#F3F9F7" font-size="23" font-weight="bold">Theoretical information limit</text>
+<text x="69" y="173" fill="#8CDCC2" font-size="26">H(X) = -SUM p(i) log2 p(i)</text>
+<text x="69" y="202" fill="#AFC3D0" font-size="15">Entropy describes uncertainty under a source model.</text>
+<path d="M75 236H546" stroke="#57717E" stroke-width="2"/>
+<text x="75" y="269" fill="#AFC3D0" font-size="16">Byte histogram is only a zero-order model.</text>
+<text x="75" y="301" fill="#AFC3D0" font-size="16">Sequence structure can change compressibility.</text>
+<text x="649" y="130" fill="#F3F9F7" font-size="23" font-weight="bold">Practical coded size</text>
+<rect x="649" y="173" width="92" height="47" rx="8" fill="#6ED5B4"/><rect x="747" y="173" width="215" height="47" rx="8" fill="#487DA6"/><rect x="968" y="173" width="160" height="47" rx="8" fill="#9F90DB"/>
+<text x="657" y="201" fill="#0D222A" font-size="14" font-weight="bold">Header</text>
+<text x="778" y="201" fill="#F7FAFC" font-size="14" font-weight="bold">Encoded data</text>
+<text x="989" y="201" fill="#F7FAFC" font-size="14" font-weight="bold">Model / tables</text>
+<text x="649" y="257" fill="#AFC3D0" font-size="16">Total cost = metadata + payload + model</text>
+<text x="649" y="295" fill="#AFC3D0" font-size="16">Select RAW when compression increases size.</text>
+<text x="42" y="370" fill="#88AFBB" font-size="13">Conceptual decomposition only — segment widths do not represent real measurements.</text>
+</g></svg>
